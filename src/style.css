@@ -1,0 +1,17 @@
+#mainContainer {
+    background: url('./assets/diner.jpeg');
+
+}
+
+#header {
+
+    align-items: center;
+    background-color: teal;
+    text-align: center;
+}
+
+#headline {
+    border-radius: 2%;
+    background-color: antiquewhite;
+        
+}
