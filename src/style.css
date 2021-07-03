@@ -1,5 +1,14 @@
 #mainContainer {
-    background: url('./assets/diner.jpeg');
+    text-align: center;
+
+}
+
+#about {
+
+    background-image: url("./assets/eggs.jpg");
+    background-repeat: no-repeat;
+    background-size: 150px ;
+    background-position: center;
 
 }
 

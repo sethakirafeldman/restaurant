@@ -28,7 +28,7 @@ const pageLoad = ()=> {
         let genButton = document.createElement("button");
         genButton.id= genItem;
         genButton.setAttribute("class", "tabLink");
-        genButton.setAttribute("onclick", "switchTab("+genItem+")" );
+        //genButton.setAttribute("onclick", "switchTab("+genItem+")" );
         genButton.innerText= genItem.toUpperCase();
         header.appendChild(genButton);
         i++;     
@@ -40,6 +40,6 @@ const pageLoad = ()=> {
     content.appendChild(main);
 
     //main.appendChild(background);
-}
+};
 
 export { pageLoad }  
