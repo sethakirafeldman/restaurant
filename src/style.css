@@ -1,26 +1,29 @@
 #mainContainer {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
     text-align: center;
-
-}
-
-#about {
-
-    background-image: url("./assets/eggs.jpg");
-    background-repeat: no-repeat;
-    background-size: 150px ;
-    background-position: center;
-
+    border-style: solid;
+    background-color: rgba(253, 252, 252, 0.5);
+    border-width: auto;
 }
 
 #header {
-
+    background-image: url("./assets/tile.jpeg");
     align-items: center;
-    background-color: teal;
+    background-color: hsla(0, 20%, 99%, 0.5);
     text-align: center;
 }
 
 #headline {
-    border-radius: 2%;
-    background-color: antiquewhite;
-        
+    align-items: center;
+    align-self: center;
+    position: static;
+}
+
+h3, h1 {
+    color: black;
+
 }

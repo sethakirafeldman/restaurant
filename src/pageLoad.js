@@ -1,23 +1,28 @@
 const pageLoad = ()=> {
     const content = document.querySelector("div#content");
-    console.log("pageLoad is firing");
 
     //create header
     let header = document.createElement("div");
     header.id = "header";
     content.appendChild(header);
 
+    // create title container
+    let titleContainer = document.createElement("div");
+    //titleContainer.id("titleContainer");
+    header.appendChild(titleContainer);
+    
+
     // create title
     let title = document.createElement("h1");
     title.innerText = "Zee Bistro";
     title.id = "title"; 
-    header.appendChild(title);
+    titleContainer.appendChild(title);
 
     //create headline
     let headline = document.createElement("h3");
     headline.id="headline";
     headline.innerText='"Where yum yum meets tum tum."'; 
-    header.appendChild(headline);
+    titleContainer.appendChild(headline);
 
     //create menu items
     const menuItems = ["home", "menu", "contact"];
@@ -40,6 +45,8 @@ const pageLoad = ()=> {
     content.appendChild(main);
 
     //main.appendChild(background);
+
 };
 
 export { pageLoad }  
+
