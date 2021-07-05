@@ -7,22 +7,25 @@ const pageLoad = ()=> {
     content.appendChild(header);
 
     // create title container
-    let titleContainer = document.createElement("div");
+    /*let titleContainer = document.createElement("div");
     //titleContainer.id("titleContainer");
-    header.appendChild(titleContainer);
+    header.appendChild(titleContainer);*/
     
+    //make title div
 
     // create title
     let title = document.createElement("h1");
     title.innerText = "Zee Bistro";
     title.id = "title"; 
-    titleContainer.appendChild(title);
+    header.appendChild(title);
+
+    // make headline div for styling.
 
     //create headline
     let headline = document.createElement("h3");
     headline.id="headline";
     headline.innerText='"Where yum yum meets tum tum."'; 
-    titleContainer.appendChild(headline);
+    header.appendChild(headline);
 
     //create menu items
     const menuItems = ["home", "menu", "contact"];

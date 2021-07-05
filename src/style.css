@@ -10,20 +10,24 @@
     border-width: auto;
 }
 
+#title {
+    background-color: rgba(253, 252, 252, 0.5);
+    color: black;
+    max-width: fit-content;
+    border-style: double;
+
+}
+
+#headline {
+    background-color: rgba(253, 252, 252, 0.5);
+    max-width: fit-content;
+    color: black;
+    border-style: double;
+}
+
 #header {
-    background-image: url("./assets/tile.jpeg");
-    align-items: center;
+    background-image: url("./assets/tile.jpeg"); 
     background-color: hsla(0, 20%, 99%, 0.5);
     text-align: center;
 }
 
-#headline {
-    align-items: center;
-    align-self: center;
-    position: static;
-}
-
-h3, h1 {
-    color: black;
-
-}
