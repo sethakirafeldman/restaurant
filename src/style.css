@@ -1,8 +1,9 @@
 #mainContainer {
-    position:fixed;
-    width: fit-content;
+
+    margin: 0 auto;
+    position: fixed;
+    width: 50%;
     text-align: center;
-    margin: auto;
     border-style: solid;
     background-color: rgba(253, 252, 252, 0.5);
 }
@@ -34,16 +35,15 @@
 }
 
 img {
+    
     margin: auto;
+
     align-items: center;
     width: fit-content;
 
 }
 
 #content {
-  /*  display: flex;
-    justify-content: center;*/
     margin: auto;
     max-width: fit-content;
-    
 }
