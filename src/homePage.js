@@ -8,7 +8,7 @@ const pageContent = {
 
 const buildHome = () => {
     const main = document.getElementById("mainContainer");
-
+    
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild); 
     };
