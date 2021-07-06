@@ -6,13 +6,6 @@ const pageLoad = ()=> {
     header.id = "header";
     content.appendChild(header);
 
-    // create title container
-    /*let titleContainer = document.createElement("div");
-    //titleContainer.id("titleContainer");
-    header.appendChild(titleContainer);*/
-    
-    //make title div
-
     // create title
     let title = document.createElement("h1");
     title.innerText = "Zee Bistro";
@@ -46,9 +39,6 @@ const pageLoad = ()=> {
     let main = document.createElement("div");
     main.id= "mainContainer";
     content.appendChild(main);
-
-    //main.appendChild(background);
-
 };
 
 export { pageLoad }  

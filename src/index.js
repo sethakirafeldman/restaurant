@@ -1,13 +1,16 @@
 import { pageLoad } from './pageLoad.js';
 import { homeModule } from './homePage.js';
 import { menuModule } from './menuPage.js';
+import { contactModule } from './contact.js';
 import './style.css';
 import Background from './assets/diner.jpeg';
 
 pageLoad();
 homeModule(); // need to set this to default
 menuModule();
+//contactModule(); this makes default despite menuModule not doing that.
 
 const background = new Image();
 background.src = Background;
+background.id="background";
 content.appendChild(background);

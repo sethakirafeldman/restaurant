@@ -1,11 +1,13 @@
 #mainContainer {
 
     margin: 0 auto;
-    position: fixed;
-    width: 50%;
+    position: relative;
+    width: 100%;
     text-align: center;
+    align-items: center;
     border-style: solid;
     background-color: rgba(253, 252, 252, 0.5);
+    /* look into z-index to overlay items on background.*/
 }
 
 #title {
@@ -34,16 +36,22 @@
     max-width: 100%;
 }
 
-img {
-    
-    margin: auto;
 
-    align-items: center;
-    width: fit-content;
+
+#content {
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+#background {
+    position: relative;
 
 }
 
-#content {
-    margin: auto;
-    max-width: fit-content;
+.tabLink {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  whitesmoke;
+    padding: 2px;
+    font-size: medium;
+
 }
