@@ -6,9 +6,10 @@ import './style.css';
 import Background from './assets/diner.jpeg';
 
 pageLoad();
-homeModule(); // need to set this to default
 menuModule();
-//contactModule(); this makes default despite menuModule not doing that.
+contactModule(); //this makes default despite menuModule not doing that.
+homeModule(); // need to set this to default
+
 
 const background = new Image();
 background.src = Background;
