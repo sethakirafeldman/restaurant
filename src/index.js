@@ -15,3 +15,4 @@ const background = new Image();
 background.src = Background;
 background.id="background";
 content.appendChild(background);
+//this has to be set to content in order to stay with each load.

@@ -21,6 +21,7 @@ const buildHome = () => {
             activeElement = pageElements[i];
             div = document.createElement("div");
             div.id= activeElement;
+            div.classList.add("pageText");
             div.innerHTML = pageContent[activeElement];
             main.appendChild(div);
             i++;
