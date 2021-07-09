@@ -1,8 +1,8 @@
-const pageElements = ['menu','eggs', "pancakes", "benny", "huevos", "waffles"];
+const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
 
 //add descriptions to items somewhere.  
  const pageContent = {
-    menu: "<h3>Menu</h3>",
+
     eggs: "Ain't Fakin' Bacon & Eggs - $5.95",
     pancakes: "Flappin' Jack's Pancakes - $5.95",
     benny: "Hollandaised and Confused - $7.95",
@@ -22,25 +22,26 @@ const pageElements = ['menu','eggs', "pancakes", "benny", "huevos", "waffles"];
 
  const buildMenu = () => {
 
-    const main = document.getElementById("mainContainer");
+    //const main = document.getElementById("mainContainer");
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild); 
     };
 
     let div = "";
-    let activeElement = ""
-    let tempactive = "";
-
+   
+    let menu = document.createElement("div");
+    menu.id = "foodMenu";
+    menu.innerHTML = "<h3>Menu</h3>";
+    mainContainer.appendChild(menu);
+    
         let i = 0;
-        while (i < pageElements.length) {
-            activeElement = pageElements[i];
+        while (i < foodItems.length) {
+            //activeElement = foodItems[i];
             div = document.createElement("div");
-            div.id= activeElement;
-            div.innerHTML = pageContent[activeElement];
-            main.appendChild(div);
-           // tempactive= document.getElementById(pageElements[i]);
-            //tempactive.appendChild(itemDescriptions.pageElements[i]);
-
+            div.id = foodItems[i];
+            div.classList.add("foodItem");
+            div.innerHTML = pageContent[foodItems[i]];
+            menu.appendChild(div);
             i++;
         };
 

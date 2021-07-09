@@ -22,9 +22,6 @@ const buildContact = () => {
         i++
 
     };
-
-
-    
 };
 
 const contactModule = () => {
@@ -32,8 +29,6 @@ const contactModule = () => {
     let contactButton = document.getElementById("contact");
     contactButton.addEventListener("click", buildContact);
     contactButton.click();
-
-
 };
 
 export { contactModule }

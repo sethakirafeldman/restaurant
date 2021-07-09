@@ -11,9 +11,6 @@
 
 }
 
-.pageText {
-    z-index: 1;
-}
 
 #title {
     margin: auto;
@@ -41,7 +38,15 @@
     max-width: 100%;
 }
 
+.foodItem {
+    border-style: solid; 
+    padding: 5%;
 
+}
+
+#foodMenu {
+   margin: 0 auto;
+}
 
 #content {
     margin: 0 auto;
@@ -49,6 +54,7 @@
 }
 
 #background {
+
 }
 
 .tabLink {
