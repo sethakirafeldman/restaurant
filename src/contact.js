@@ -26,7 +26,7 @@ const buildContact = () => {
 
 const contactModule = () => {
 
-    let contactButton = document.getElementById("contact");
+    let contactButton = document.getElementById("contactBtn");
     contactButton.addEventListener("click", buildContact);
     contactButton.click();
 };

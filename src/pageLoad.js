@@ -27,9 +27,8 @@ const pageLoad = ()=> {
     while (i < menuItems.length) {
         let genItem = menuItems[i];
         let genButton = document.createElement("button");
-        genButton.id= genItem;
+        genButton.id= genItem+"Btn";
         genButton.setAttribute("class", "tabLink");
-        //genButton.setAttribute("onclick", "switchTab("+genItem+")" );
         genButton.innerText= genItem.toUpperCase();
         header.appendChild(genButton);
         i++;     

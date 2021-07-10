@@ -1,22 +1,31 @@
 const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
 
 //add descriptions to items somewhere.  
+
  const pageContent = {
 
-    eggs: "Ain't Fakin' Bacon & Eggs - $5.95",
-    pancakes: "Flappin' Jack's Pancakes - $5.95",
-    benny: "Hollandaised and Confused - $7.95",
-    huevos: "Huevos Rancheros - $8.95",
-    waffles: "Waffles & Dreams - 8.95"
+    eggs: "Ain't Fakin' Bacon & Eggs", 
+    pancakes: "Flappin' Jack's Pancakes",
+    benny: "Hollandaised and Confused",
+    huevos: "Huevos Rancheros",
+    waffles: "Waffles & Whipped Dreams"
  };
+
+ const price = {
+    eggs: "$5.95",
+    pancakes: "$5.95",
+    benny: "$7.95",
+    huevos: "$8.95",
+    waffles: "8.95"
+ };
+
 
  const itemDescriptions = {
     eggs: "Traditional farmer's delight. Served with freshly cut hashbrowns and coffee.",
     pancakes: "Start your day right with desert.",
-    benny: "Zee Bistro's take on Eggs Benny. Roll over, Benedict.",
+    benny: "Zee Bistro's take on Eggs Benny. Roll over, Benedict. Benny and the Dicts",
     huevos: "",
     waffles: ""
-
  };
 
 
@@ -28,7 +37,9 @@ const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
     };
 
     let div = "";
-   
+    let div2 = "";
+    let div3 = "";
+
     let menu = document.createElement("div");
     menu.id = "foodMenu";
     menu.innerHTML = "<h3>Menu</h3>";
@@ -36,19 +47,30 @@ const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
     
         let i = 0;
         while (i < foodItems.length) {
-            //activeElement = foodItems[i];
             div = document.createElement("div");
             div.id = foodItems[i];
             div.classList.add("foodItem");
             div.innerHTML = pageContent[foodItems[i]];
             menu.appendChild(div);
+
+            div2 = document.createElement("div");
+            div2.classList.add("foodDescription");
+            div2.innerHTML = itemDescriptions[foodItems[i]];
+            div.appendChild(div2);
+
+            div3 = document.createElement("div");
+            div3.classList.add("price");
+            div3.innerHTML = "- " + price[foodItems[i]];
+            div2.appendChild(div3);
+
             i++;
+
         };
 
  };
 
  const menuModule = () => {
-    let menuButton = document.getElementById("menu");
+    let menuButton = document.getElementById("menuBtn");
     menuButton.addEventListener('click', buildMenu);
 };
 

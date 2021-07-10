@@ -1,4 +1,4 @@
-const pageElements = ['home', 'about','aboutTwo'];
+const pageElements = ['about','aboutTwo'];
 
 const pageContent = {    
     home: "<h3>Home</h3>",
@@ -13,6 +13,11 @@ const buildHome = () => {
         mainContainer.removeChild(mainContainer.firstChild); 
     };
 
+    let homeDiv = document.createElement("div");
+    homeDiv.id = "home";
+    homeDiv.innerHTML = "<h3>Home</h3>";
+    mainContainer.appendChild(homeDiv);
+
     let div = "";
     let activeElement = ""
 
@@ -23,7 +28,7 @@ const buildHome = () => {
             div.id= activeElement;
             div.classList.add("pageText");
             div.innerHTML = pageContent[activeElement];
-            main.appendChild(div);
+            homeDiv.appendChild(div);
             i++;
         };
     };
@@ -31,7 +36,7 @@ const buildHome = () => {
 const homeModule = () => {
 
     console.log("homefunction");
-    let homeButton = document.getElementById("home");
+    let homeButton = document.getElementById("homeBtn");
     homeButton.addEventListener("click", buildHome);
     homeButton.click();
 
