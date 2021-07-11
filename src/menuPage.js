@@ -24,14 +24,13 @@ const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
     eggs: "Traditional farmer's delight. Served with freshly cut hashbrowns and coffee.",
     pancakes: "Start your day right with desert.",
     benny: "Zee Bistro's take on Eggs Benny. Roll over, Benedict. Benny and the Dicts",
-    huevos: "",
-    waffles: ""
+    huevos: "If you're feeling fiery, look no more.",
+    waffles: "Essentially a tortured pancake."
  };
 
 
  const buildMenu = () => {
 
-    //const main = document.getElementById("mainContainer");
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild); 
     };
@@ -39,6 +38,8 @@ const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
     let div = "";
     let div2 = "";
     let div3 = "";
+    let img = "";
+    
 
     let menu = document.createElement("div");
     menu.id = "foodMenu";
@@ -62,6 +63,10 @@ const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
             div3.classList.add("price");
             div3.innerHTML = "- " + price[foodItems[i]];
             div2.appendChild(div3);
+
+            // img = new Image();
+            // img.src = Eggs;
+            // div3.appendChild(img);
 
             i++;
 

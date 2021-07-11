@@ -30,42 +30,39 @@
 }
 
 
+#home, #foodMenu, #contact {
+
+    width: fit-content;
+    text-align: center;
+    border-style: solid;
+    background-color: rgba(253, 252, 252, 0.5);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 #home {
-
-    width: fit-content;
-    text-align: center;
-    border-style: solid;
-    background-color: rgba(253, 252, 252, 0.5);
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    top: 20%;
 }
 
 
-#menu {
-    
-    width: fit-content;
-    text-align: center;
-    border-style: solid;
-    background-color: rgba(253, 252, 252, 0.5);
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+#foodMenu {
+    top:30%;
 }
+
 #contact {
-
-    
+    top:20%;
+  
 }
+
 .foodItem {
-    /* padding: 5%; */
+    padding: 1%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     text-align: left;
-    /* width: fit-content; */
+    width: fit-content;
 }
 
 .foodDescription {
@@ -75,7 +72,6 @@
 
 #background {
     background-size: cover;
-
 }
 
 .tabLink {

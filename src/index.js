@@ -4,6 +4,7 @@ import { menuModule } from './menuPage.js';
 import { contactModule } from './contact.js';
 import './style.css';
 import Background from './assets/diner.jpeg';
+import Eggs from './assets/eggs_img.jpg';
 
 pageLoad();
 menuModule();
