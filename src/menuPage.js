@@ -1,4 +1,11 @@
+import Eggs from './assets/eggs_img.jpg';
+import Pancakes from './assets/pancakes_img.jpg';
+import Benny from './assets/benny_img.jpg';
+import Huevos from './assets/huevos_img.jpg';
+import Waffles from './assets/waffles_img.jpg';
+
 const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
+const foodImages = ['Eggs', 'Pancakes', 'Benny', 'Huevos', 'Waffles'];
 
 //add descriptions to items somewhere.  
 
@@ -64,13 +71,23 @@ const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
             div3.innerHTML = "- " + price[foodItems[i]];
             div2.appendChild(div3);
 
-            // img = new Image();
-            // img.src = Eggs;
-            // div3.appendChild(img);
-
             i++;
 
         };
+
+   let j = 0;
+
+   while (j < foodImages.length ) { 
+      console.log("jWhile?");
+      let temp = document.getElementById(foodItems[j]);
+      img = new Image();
+      img.classList.add("foodImage");
+      img.src = foodImages[j];
+      temp.appendChild(img);
+      j++;
+   }; see //https://webpack.js.org/loaders/imports-loader/
+   
+
 
  };
 
@@ -80,3 +97,8 @@ const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
 };
 
 export { menuModule}
+export {Eggs}
+export {Pancakes} 
+export {Benny} 
+export {Huevos} 
+export {Waffles} 
