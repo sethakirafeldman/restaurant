@@ -12,7 +12,7 @@ const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles];
     pancakes: "Flappin' Jack's Pancakes",
     benny: "Hollandaised and Confused",
     huevos: "Huevos Rancheros",
-    waffles: "Waffles & Whipped Dreams"
+    waffles: "Waffles du Beurre"
  };
 
  const price = {
@@ -29,7 +29,7 @@ const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles];
     pancakes: "Start your day right with desert.",
     benny: "Zee Bistro's take on Eggs Benny. Roll over, Benedict. Benny and the Dicts",
     huevos: "If you're feeling fiery, look no more.",
-    waffles: "Essentially a tortured pancake."
+    waffles: "Essentially, it's a tortured pancake. Buttered for your pleasure."
  };
 
 
@@ -95,4 +95,4 @@ const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles];
 };
 
 export { menuModule}
-export {Eggs } 
+// export {Eggs } 
