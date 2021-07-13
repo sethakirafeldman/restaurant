@@ -5,10 +5,7 @@ import Huevos from './assets/huevos_img.jpg';
 import Waffles from './assets/waffles_img.jpg';
 
 const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
-const foodImages = ['Eggs', 'Pancakes', 'Benny', 'Huevos', 'Waffles'];
-
-//add descriptions to items somewhere.  
-
+const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles];
  const pageContent = {
 
     eggs: "Ain't Fakin' Bacon & Eggs", 
@@ -81,14 +78,15 @@ const foodImages = ['Eggs', 'Pancakes', 'Benny', 'Huevos', 'Waffles'];
       console.log("jWhile?");
       let temp = document.getElementById(foodItems[j]);
       img = new Image();
+      img.id= foodItems[j]+"-img";
       img.classList.add("foodImage");
-      img.src = foodImages[j];
+      // img.src = Eggs;
+      img.src= foodImages[j];
       temp.appendChild(img);
       j++;
-   }; see //https://webpack.js.org/loaders/imports-loader/
+   }; 
+   //see https://webpack.js.org/loaders/imports-loader/
    
-
-
  };
 
  const menuModule = () => {
@@ -97,8 +95,4 @@ const foodImages = ['Eggs', 'Pancakes', 'Benny', 'Huevos', 'Waffles'];
 };
 
 export { menuModule}
-export {Eggs}
-export {Pancakes} 
-export {Benny} 
-export {Huevos} 
-export {Waffles} 
+export {Eggs } 

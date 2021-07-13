@@ -35,7 +35,6 @@ const buildHome = () => {
 
 const homeModule = () => {
 
-    console.log("homefunction");
     let homeButton = document.getElementById("homeBtn");
     homeButton.addEventListener("click", buildHome);
     homeButton.click();
