@@ -29,31 +29,30 @@
     border-style: double;
 }
 
-
 #home, #foodMenu, #contact {
-
+    
     width: fit-content;
     text-align: center;
     border-style: solid;
     background-color: rgba(253, 252, 252, 0.5);
     position: absolute;
-    top: 25%;
+    /* top: 25%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 
 }
 
-#home {
-    top: 20%;
+#mainContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
-
 
 #foodMenu {
-    top:30%;
+    /* top:30%; */
 }
 
 #contact {
-    top:20%;
   
 }
 
