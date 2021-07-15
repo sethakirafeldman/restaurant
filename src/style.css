@@ -1,16 +1,17 @@
 
 #content {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: fit-content;
 }
 
 #header {
-    
-    margin: auto;
     background-image: url("./assets/tile.jpeg"); 
     background-color: hsla(0, 20%, 99%, 0.5);
+    background-repeat: repeat-x;
     text-align: center;
-    max-width: 100%;
+    max-width:100%;
 }
 
 #title {
@@ -29,7 +30,17 @@
     border-style: double;
 }
 
+#mainContainer {
+  
+    border-style: dotted;
+    max-height: fit-content;
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: center; */
+}
+
 #home, #foodMenu, #contact {
+    /* justify-content: center; */
     
     width: fit-content;
     text-align: center;
@@ -42,11 +53,7 @@
 
 }
 
-#mainContainer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
+
 
 #foodMenu {
     /* top:30%; */
@@ -71,7 +78,6 @@
 .foodImage {
     max-width: 100px;
     float: inherit;
-
 }
 
 
