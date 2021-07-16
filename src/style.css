@@ -36,7 +36,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-style: dotted;
 }
 
 #home, #foodMenu, #contact {
@@ -52,7 +51,10 @@
 }
 
 #foodMenu {
-    /* top:30%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
 }
 
 #contact {

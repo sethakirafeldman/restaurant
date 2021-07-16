@@ -6,7 +6,7 @@ import Waffles from './assets/waffles_img.jpg';
 
 const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"];
 const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles];
- const pageContent = {
+const pageContent = {
 
     eggs: "Ain't Fakin' Bacon & Eggs", 
     pancakes: "Flappin' Jack's Pancakes",
@@ -47,7 +47,7 @@ const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles];
 
     let menu = document.createElement("div");
     menu.id = "foodMenu";
-    menu.innerHTML = "<h3>Menu</h3>";
+   //  menu.innerHTML = "<h3>Menu</h3>";
     mainContainer.appendChild(menu);
     
         let i = 0;
