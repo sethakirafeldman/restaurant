@@ -4,6 +4,8 @@
     flex-direction: column;
     justify-content: center;
     max-width: fit-content;
+
+    
 }
 
 #header {
@@ -31,17 +33,13 @@
 }
 
 #mainContainer {
-  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     border-style: dotted;
-    max-height: fit-content;
-    /* display: flex;
-    align-items: flex-start;
-    justify-content: center; */
 }
 
 #home, #foodMenu, #contact {
-    /* justify-content: center; */
-    
     width: fit-content;
     text-align: center;
     border-style: solid;
@@ -52,8 +50,6 @@
     transform: translate(-50%, -50%); */
 
 }
-
-
 
 #foodMenu {
     /* top:30%; */
