@@ -17,7 +17,7 @@ const pageLoad = ()=> {
     //create headline
     let headline = document.createElement("h3");
     headline.id="headline";
-    headline.innerText='"Where yum yum meets tum tum."'; 
+    headline.innerText='"A vintage dining experience. Nostalgia included, free of charge."'; 
     header.appendChild(headline);
 
     //create menu items
@@ -38,6 +38,7 @@ const pageLoad = ()=> {
     let main = document.createElement("div");
     main.id= "mainContainer";
     content.appendChild(main);
+    
 };
 
 export { pageLoad }  
