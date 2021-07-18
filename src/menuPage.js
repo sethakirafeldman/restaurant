@@ -3,18 +3,18 @@ import Pancakes from './assets/pancakes_img.jpg';
 import Benny from './assets/benny_img.jpg';
 import Huevos from './assets/huevos_img.jpg';
 import Waffles from './assets/waffles_img.jpg';
-import Omelette from './assets/omelette_img.jpg';
+// import Omelette from './assets/omelette_img.jpg';
 
-const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles", "omelette"];
-const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles, Omelette];
+const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"/*,"omelette"*/];
+const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles/*, Omelette*/];
 const pageContent = {
 
     eggs: "Ain't Fakin' Bacon & Eggs", 
     pancakes: "Flappin' Jack's Pancakes",
     benny: "Hollandaised and Confused",
     huevos: "Huevos Rancheros",
-    waffles: "Waffles du Beurre",
-    omelette: "Circle of Life Omelette"
+    waffles: "Waffles du Beurre"
+   //  omelette: "Circle of Life Omelette"
  };
 
  const price = {
@@ -23,7 +23,7 @@ const pageContent = {
     benny: "$7.95",
     huevos: "$8.95",
     waffles: "$8.95",
-    omelette: "$6.95"
+   //  omelette: "$6.95"
  };
 
 
@@ -33,7 +33,7 @@ const pageContent = {
     benny: "Zee Bistro's take on Eggs Benny. Roll over, Benedict. Benny and the Dicts",
     huevos: "If you're feeling fiery, look no more.",
     waffles: "Essentially, it's a tortured pancake. Buttered for your pleasure.",
-    omelette: "You know what it is."
+   //  omelette: "You know what it is."
  };
 
 
@@ -53,6 +53,8 @@ const pageContent = {
     menu.id = "foodMenu";
    //  menu.innerHTML = "<h3>Menu</h3>";
     mainContainer.appendChild(menu);
+
+ 
     
         let i = 0;
         while (i < foodItems.length) {
@@ -75,19 +77,19 @@ const pageContent = {
             i++;
 
         };
+        
+        let j = 0;
+        while (j < foodImages.length ) { 
+           console.log("jWhile?");
+           let temp = document.getElementById(foodItems[j]);
+           img = new Image();
+           img.id= foodItems[j]+"-img";
+           img.classList.add("foodImage");
+           img.src= foodImages[j];
+           temp.appendChild(img);
+           j++;
+        }; 
 
-   let j = 0;
-
-   while (j < foodImages.length ) { 
-      console.log("jWhile?");
-      let temp = document.getElementById(foodItems[j]);
-      img = new Image();
-      img.id= foodItems[j]+"-img";
-      img.classList.add("foodImage");
-      img.src= foodImages[j];
-      temp.appendChild(img);
-      j++;
-   }; 
    
  };
 
