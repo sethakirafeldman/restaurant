@@ -42,4 +42,7 @@ const homeModule = () => {
 
 };
 
+// mainContainer.appendChild(background);
+
+
 export { homeModule }

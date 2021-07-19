@@ -15,6 +15,7 @@ background.src = Background;
 background.id="background";
 content.appendChild(background);
 
+
 let footer = document.createElement("div");
 footer.id="footer";
 content.appendChild(footer);

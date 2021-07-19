@@ -36,12 +36,13 @@
 
 #mainContainer {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-evenly;
+    max-height: auto;
 }
 
 #home, #foodMenu, #contact {
-    width: fit-content;
+    width: auto;
     text-align: center;
     border-style: solid;
     background-color: rgba(253, 252, 252, 0.5);
@@ -51,11 +52,12 @@
 
 #foodMenu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    min-width: 50%;
+    min-width: auto;
     flex-wrap: wrap;
     max-height: auto;
+    max-width: 100%;
 }
 
 #contact {
@@ -66,26 +68,37 @@
     /* padding: 1%; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    text-align: left;
-    padding: 2%;
+    text-align: center;
+    padding: 2%;   
     font-size: 1em;
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+    stroke-width: 3px;
+    font-size: larger;
+
+
     /* border-style: dashed; */
     max-width: 20rem;
     min-width: 4rem;
 }
 
 .foodDescription {
+    -webkit-text-fill-color: white;
+
     font-weight: normal;
+    border-style: solid;
 }
 
 .foodImage {
-    display: inline;
-    max-width: 15rem;
+    /* display: inline; */
+    max-width:100%;
+    max-height: auto;
 
 }
 
 #background {
-    background-size: auto;
+    size: auto;
+
 }
 
 .tabLink {
