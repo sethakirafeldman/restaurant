@@ -46,7 +46,7 @@
     text-align: center;
     border-style: solid;
     background-color: rgba(253, 252, 252, 0.5);
-    position: absolute;
+    position: fixed;
 
 }
 
@@ -71,9 +71,6 @@
     text-align: center;
     padding: 2%;   
     font-size: 1em;
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: white;
-    stroke-width: 3px;
     font-size: larger;
 
 
@@ -83,8 +80,6 @@
 }
 
 .foodDescription {
-    -webkit-text-fill-color: white;
-
     font-weight: normal;
     border-style: solid;
 }

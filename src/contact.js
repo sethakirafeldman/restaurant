@@ -1,7 +1,9 @@
+const contactValues = ['phone', 'email'];
+
 const contactInfo = {
     
-    phone: "<strong>Phone Number:</strong> <a href='555-555-5555'>555-555-5555",
-    email: "<strong>Email: </strong><a href=contact@zeebistro.com>contact@zeebistro.com"
+    phone: "555-555-5555",
+    email: "contact@zeebistro.com"
 
 };
 
@@ -12,20 +14,28 @@ const buildContact = () => {
 
     let i = 0;
     let div = "";
-    let contactDiv = document.createElement("div");
+    let contactDiv = document.createElement("h3");
+    let contactValDiv = document.createElement("div");
+    let selDiv = "";
+
     contactDiv.id="contact";
     contactDiv.innerHTML="<h3>Contact</h3>";
     mainContainer.appendChild(contactDiv);
 
     while (i < Object.keys(contactInfo).length) {
         div = document.createElement("div");
-        div.id= Object.entries(contactInfo)[i][1];
-        div.innerHTML = Object.entries(contactInfo)[i][1];
+        div.id= Object.entries(contactInfo)[i][0];
+        div.innerHTML = Object.entries(contactInfo)[i][0];
         contactDiv.appendChild(div);
+        selDiv = document.getElementById(contactValues[i]);
+        contactValDiv.innerHTML = Object.entries(contactInfo)[i][1];
+        selDiv.appendChild(contactValDiv);
 
         i++
 
     };
+
+
 };
 
 const contactModule = () => {
