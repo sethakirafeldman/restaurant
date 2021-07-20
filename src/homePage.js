@@ -1,10 +1,16 @@
-const pageElements = ['about','aboutTwo'];
+const pageElements = ['par1','par2', 'par3'];
 
 const pageContent = {    
     home: "<h3>Home</h3>",
-    about: "Zee Bistro is home to the finest grub money can buy. Flavour you'll savor, and consistency that never wavers!",
-    aboutTwo: "<br>Founded in 1931, Zee Bistro has been serving up the classics with a smile ever since."
+    par1: "Zee Bistro is home to the finest grub money can buy. Flavour you'll savor, and consistency that never wavers!",
+    par2: "<br>Founded in 1931, Zee Bistro has been serving up the classics with a smile ever since.",
+    par3: "<br>Feeling hungry? Take a look at our menu up above!"
 };
+
+// const menuAlt = () => {    
+//     let menuButton = document.getElementById("menuBtn");
+//     menuButton.click();
+// };
 
 const buildHome = () => {
     const main = document.getElementById("mainContainer");

@@ -50,6 +50,11 @@
 
 }
 
+#home {
+    font-size: 1.5rem;
+
+}
+
 #foodMenu {
     display: flex;
     flex-direction: row;
@@ -61,7 +66,7 @@
 }
 
 #contact {
-  
+    text-transform: capitalize;
 }
 
 .foodItem {
@@ -97,14 +102,38 @@
 }
 
 .tabLink {
+    display: inline-block;
+    margin: 1rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:  whitesmoke;
     padding: 2px;
-    font-size: medium;
+    font-size: 1rem;
     transition: 1ms;
+    border: none;
+    color: black;
+    
+    
 
 }
 
 .tabLink:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    background-color: lightgray;
+    text-decoration-line: underline overline;
+}
+
+.contactHeading {
+    text-align: center;
+    line-height: normal;
+    font-weight: bold;
+
+}
+.contactValue {
+    font-size: medium;
+    text-align: center;
+    padding: 1.5rem;
+    text-transform: lowercase;
+    font-weight: bold;
+
+    
 }
