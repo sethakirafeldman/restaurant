@@ -1,4 +1,4 @@
-const contactValues = ['phone', 'email'];
+const contactValues = ["phone", "email"];
 
 const contactInfo = {
     
@@ -12,30 +12,37 @@ const buildContact = () => {
         mainContainer.removeChild(mainContainer.firstChild); 
     };
 
-    let i = 0;
+    let k = 0;
     let div = "";
     let contactDiv = document.createElement("h3");
-    let contactValDiv = document.createElement("div");
-    let selDiv = "";
 
     contactDiv.id="contact";
     contactDiv.innerHTML="<h3>Contact</h3>";
     mainContainer.appendChild(contactDiv);
 
-    while (i < Object.keys(contactInfo).length) {
+    while (k < Object.keys(contactInfo).length) {
         div = document.createElement("div");
-        div.id= Object.entries(contactInfo)[i][0];
-        div.innerHTML = Object.entries(contactInfo)[i][0];
+        div.id= Object.entries(contactInfo)[k][0];
+        div.innerHTML = Object.entries(contactInfo)[k][0];
         contactDiv.appendChild(div);
-        selDiv = document.getElementById(contactValues[i]);
-        contactValDiv.innerHTML = Object.entries(contactInfo)[i][1];
-        selDiv.appendChild(contactValDiv);
-
-        i++
+        k++;
 
     };
 
+    let l = 0;
+    let contactValDiv = ""
+    let selDiv = "";
 
+    while (l < contactValues.length) {  
+        // console.log(Object.values(contactInfo)[l]+l+"passtest");
+        contactValDiv = document.createElement("div");
+        contactValDiv.innerHTML = Object.values(contactInfo)[l];
+        contactValDiv.classList.add("contactValue");
+        document.querySelector('#'+contactValues[l]).appendChild(contactValDiv);
+
+        l++;
+        // not at all clear why val only ends up in last div.
+    };
 };
 
 const contactModule = () => {
