@@ -80,7 +80,6 @@ const pageContent = {
         
         let j = 0;
         while (j < foodImages.length ) { 
-           console.log("jWhile?");
            let temp = document.getElementById(foodItems[j]);
            img = new Image();
            img.id= foodItems[j]+"-img";
