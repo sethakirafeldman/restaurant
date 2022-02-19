@@ -7,11 +7,6 @@ const pageContent = {
     par3: "<br>Feeling hungry? Take a look at our menu up above!"
 };
 
-// const menuAlt = () => {    
-//     let menuButton = document.getElementById("menuBtn");
-//     menuButton.click();
-// };
-
 const buildHome = () => {
     const main = document.getElementById("mainContainer");
     
@@ -47,8 +42,5 @@ const homeModule = () => {
 
 
 };
-
-// mainContainer.appendChild(background);
-
 
 export { homeModule }

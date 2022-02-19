@@ -2,18 +2,18 @@ import Eggs from './assets/eggs_img.jpg';
 import Pancakes from './assets/pancakes_img.jpg';
 import Benny from './assets/benny_img.jpg';
 import Huevos from './assets/huevos_img.jpg';
-import Waffles from './assets/waffles_img.jpg';
+// import Waffles from './assets/waffles_img.jpg';
 // import Omelette from './assets/omelette_img.jpg';
 
-const foodItems = ['eggs', "pancakes", "benny", "huevos", "waffles"/*,"omelette"*/];
-const foodImages = [Eggs, Pancakes, Benny, Huevos, Waffles/*, Omelette*/];
+const foodItems = ['eggs', "pancakes", "benny", "huevos"/*, "waffles"/*,"omelette"*/];
+const foodImages = [Eggs, Pancakes, Benny, Huevos, /*Waffles/*, Omelette*/];
 const pageContent = {
 
     eggs: "Ain't Fakin' Bacon & Eggs", 
     pancakes: "Flappin' Jack's Pancakes",
     benny: "Hollandaised and Confused",
     huevos: "Huevos Rancheros",
-    waffles: "Waffles du Beurre"
+    // waffles: "Waffles du Beurre"
    //  omelette: "Circle of Life Omelette"
  };
 
@@ -22,7 +22,7 @@ const pageContent = {
     pancakes: "$5.95",
     benny: "$7.95",
     huevos: "$8.95",
-    waffles: "$8.95",
+    // waffles: "$8.95",
    //  omelette: "$6.95"
  };
 
@@ -32,7 +32,7 @@ const pageContent = {
     pancakes: "Start your day right with desert.",
     benny: "Zee Bistro's take on Eggs Benny. Roll over, Benedict. Benny and the Dicts",
     huevos: "If you're feeling fiery, look no more.",
-    waffles: "Essentially, it's a tortured pancake. Buttered for your pleasure.",
+    // waffles: "Essentially, it's a tortured pancake.",
    //  omelette: "You know what it is."
  };
 
@@ -51,7 +51,6 @@ const pageContent = {
 
     let menu = document.createElement("div");
     menu.id = "foodMenu";
-   //  menu.innerHTML = "<h3>Menu</h3>";
     mainContainer.appendChild(menu);
 
  

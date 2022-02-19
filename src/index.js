@@ -5,6 +5,7 @@ import { contactModule } from './contact.js';
 import './style.css';
 import Background from './assets/diner.jpg';
 
+
 pageLoad();
 menuModule();
 contactModule();
