@@ -1,3 +1,5 @@
+import Background from './assets/diner.jpg';
+
 const pageLoad = ()=> {
     const content = document.querySelector("div#content");
 
@@ -38,8 +40,32 @@ const pageLoad = ()=> {
     let main = document.createElement("div");
     main.id= "mainContainer";
     content.appendChild(main);
-    
+
+    // // create background
+    // const addBackground = () => {
+    //     let background = new Image();
+    //     background.src = Background;
+    //     background.id="background";
+    //     main.appendChild(background);     
+    //     console.log("does this happen");
+    // };
+
+    //create footer
+
+    let footer = document.createElement("div");
+    footer.id="footer";
+    content.appendChild(footer);
 };
 
-export { pageLoad }  
+    // create background
+const addBackground = (parent) => {
+    let background = new Image();
+    background.src = Background;
+    background.id="background";
+    parent.appendChild(background);     
+};
+
+export { pageLoad };
+export { addBackground };
+
 

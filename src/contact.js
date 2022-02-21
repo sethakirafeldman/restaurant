@@ -1,3 +1,5 @@
+import { addBackground } from "./pageLoad";
+
 const contactValues = ["phone", "email", "location"];
 
 const contactInfo = {
@@ -41,7 +43,7 @@ const buildContact = () => {
         k++;
 
     };
-
+    addBackground(mainContainer);
 };
 
 const contactModule = () => {

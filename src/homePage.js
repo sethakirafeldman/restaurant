@@ -1,3 +1,5 @@
+import { addBackground } from "./pageLoad.js";
+
 const pageElements = ['par1','par2', 'par3'];
 
 const pageContent = {    
@@ -8,7 +10,7 @@ const pageContent = {
 };
 
 const buildHome = () => {
-    const main = document.getElementById("mainContainer");
+    // const main = document.getElementById("mainContainer");
     
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild); 
@@ -32,6 +34,7 @@ const buildHome = () => {
             homeDiv.appendChild(div);
             i++;
         };
+        addBackground(mainContainer);
     };
 
 const homeModule = () => {
@@ -42,5 +45,7 @@ const homeModule = () => {
 
 
 };
+
+
 
 export { homeModule }
