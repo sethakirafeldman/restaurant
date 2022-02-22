@@ -90,7 +90,7 @@ const pageContent = {
            temp.appendChild(img);
            j++;
         }; 
-    addBackground(mainContainer);
+   //  addBackground(mainContainer);
    
  };
 
