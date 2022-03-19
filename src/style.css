@@ -1,17 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
 #content {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    margin: auto;
     background-image: url("./assets/tile.jpeg"); 
-    z-index: 9;
+    z-index: -1;
+    padding: 0;
 }
 
 #header {
+
     background-image: url("./assets/tile.jpeg"); 
     text-align: center;
-    justify-content: center;
     align-items: center;
     min-height: 100px;
     min-width: 100%; 
@@ -19,7 +25,7 @@
 
 #footer {
     background-image: url("./assets/tile.jpeg"); 
-    height: 100%;
+    height: 2000px;
     z-index: -1;
 }
 
@@ -47,12 +53,14 @@
 #home, #contact {
 
     max-width: 868px;
+    min-width: 400px;
     text-align: center;
     background-color: rgba(253, 252, 252, 0.5);
     position: fixed;
     top: 150px;
     border-style: solid;
     overflow: hidden;
+    z-index: 2;
 
 }
 
@@ -63,14 +71,16 @@
 
 #foodMenu {
     display: flex;
+    z-index: 2;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     height: auto;
     width: auto;
-    position:absolute;
     top: 150px;
     /* background-image: url("./assets/tile.jpeg");  */
+    position: absolute;
+
 }
 
 #mainContainer {
@@ -88,6 +98,7 @@
     max-width: 100%;
 }
 .foodItem {
+
     margin-top: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -95,11 +106,13 @@
     padding: 1%;   
     font-size: larger;
     max-width: 20rem;
+    /* min-width: 10rem; */
+
     height: auto;
     background-color: whitesmoke;
-    /* background-color: rgba(253, 252, 252, 0.5); */
     border-style: solid;
     border-width: .25px;
+    min-width: auto;
 
 }
 
@@ -114,9 +127,10 @@
 
 #background {
     justify-content: center;
-    width: inherit;
-    max-width: 100%;
+    position: fixed;
+    width: 90%;
     border-style: solid;
+    z-index: 1;
 }
 
 .tabLink {
