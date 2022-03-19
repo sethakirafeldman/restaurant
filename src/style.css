@@ -70,8 +70,7 @@
     width: auto;
     position:absolute;
     top: 150px;
-    background-image: url("./assets/tile.jpeg"); 
-
+    /* background-image: url("./assets/tile.jpeg");  */
 }
 
 #mainContainer {
