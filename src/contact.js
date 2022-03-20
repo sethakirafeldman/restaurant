@@ -11,6 +11,9 @@ const contactInfo = {
 };
 
 const buildContact = () => {
+
+    document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
+    
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild); 
     };

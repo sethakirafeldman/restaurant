@@ -10,7 +10,7 @@ const pageContent = {
 };
 
 const buildHome = () => {
-    // const main = document.getElementById("mainContainer");
+    document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
     
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild); 

@@ -41,7 +41,7 @@ const pageContent = {
 
 
  const buildMenu = () => {
-
+      
     while (mainContainer.firstChild) {
         mainContainer.removeChild(mainContainer.firstChild); 
     };
@@ -51,13 +51,10 @@ const pageContent = {
     let div3 = "";
     let img = "";
     
-
     let menu = document.createElement("div");
     menu.id = "foodMenu";
     mainContainer.appendChild(menu);
 
- 
-    
         let i = 0;
         while (i < foodItems.length) {
             div = document.createElement("div");
@@ -90,9 +87,12 @@ const pageContent = {
            temp.appendChild(img);
            j++;
         }; 
+
     addBackground(mainContainer);
-   
+    //scroll to top
+    document.body.scrollIntoView({behavior: 'smooth', block: 'start'});
  };
+
 
  const menuModule = () => {
     let menuButton = document.getElementById("menuBtn");

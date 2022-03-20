@@ -10,4 +10,3 @@ contactModule();
 homeModule(); 
 
 import './style.css';
-//this has to be set to content in order to stay with each load.
