@@ -1,9 +1,10 @@
 # restaurant
-
-Created using Webpack. Hosted on
+Live version of the site here:
 
 https://sethakirafeldman.github.io/restaurant/
 
-Reference for github pages:
+The purpose of this is to serve as a Vanilla JS Single-page application, where the relevant parts of the DOM are replaced depending on the selected page. 
 
-https://gist.github.com/cobyism/4730490
+This was also an exercise in modular programming, whereas each page has its own function that runs to render it. 
+
+And finally, it was bundled using Webpack to minifiy the code and deployed to and hosted by GitHub pages.
