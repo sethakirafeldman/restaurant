@@ -1,10 +1,17 @@
 # restaurant
+
+
+## Description
+The purpose of this is to serve as a Vanilla JS SPA.
+
 Live version of the site here:
 
 https://sethakirafeldman.github.io/restaurant/
 
-The purpose of this is to serve as a Vanilla JS Single-page application, where the relevant parts of the DOM are replaced depending on the selected page. 
+## Technology
 
-This was also an exercise in modular programming, whereas each page has its own function that runs to render it. 
+This was built using HTML, CSS, JavaScript and Webpack.
 
-And finally, it was bundled using Webpack to minifiy the code and deployed to and hosted by GitHub pages.
+It was an exercise in modular programming, whereas each page has its own function that is run in order to dynamically create the page.
+
+Webpack was used to bundle and minify the code. 
